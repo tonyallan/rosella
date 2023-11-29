@@ -43,7 +43,8 @@ The plan is to create one simple way to do things.
 
 ## Implementation
 1. Examples will use the AWS Melbourne region by default.
-2. The data server will work with EC2 an t4g.micro instance. It will also work with a t4g.nano instance for small applications.
+2. [Caddy](https://caddyserver.com/) is used for HTTPS termination.
+3. The data server will work with EC2 an t4g.micro instance. It will also work with a t4g.nano instance for small applications.
 
 #### Notes
 1. Portal items are preferred over a complex menu system as it more clearly identifes the actions available to a user.
