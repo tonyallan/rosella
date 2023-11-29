@@ -42,9 +42,10 @@ The plan is to create one simple way to do things.
 9. Javascript library TBD (custom, a library)
 
 ## Implementation
-1. Examples will use the AWS Melbourne region by default.
-2. [Caddy](https://caddyserver.com/) is used for HTTPS termination.
-3. The data server will work with EC2 an t4g.micro instance. It will also work with a t4g.nano instance for small applications.
+1. The server is ARM64 Ubuntu based (ubuntu-jammy-22.04-arm64-server), using systemd to run the data server. This is just a personal preference.
+2. Examples will use the AWS Melbourne region by default.
+3. [Caddy](https://caddyserver.com/) is used for HTTPS termination.
+4. The data server will work with EC2 an t4g.micro instance. It will also work with a t4g.nano instance for small applications.
 
 #### Notes
 1. Portal items are preferred over a complex menu system as it more clearly identifes the actions available to a user.
