@@ -1,3 +1,18 @@
+# 30/11/2023 Add my SQLite3 and MacOS exclusions
+
+# SQLite3
+*.db
+*.db-shm
+*.db-wal
+
+# DB Browser for SQLite (DB4S)
+*.sqbpro
+
+# MacOS
+.DS_Store
+
+# ---------------------------------------------------------------
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
