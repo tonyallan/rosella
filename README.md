@@ -1,6 +1,8 @@
 # rosella
 A simple AWS and Python approach to web development.
 
+The first usable code is `lambda/lambda-tools.py`, described below in the Code section.
+
 AWS is heavily focussed on web scale applications but there are a number of features that support small, simple and inexpensive web based applications.
 
 ## Objectives
@@ -49,3 +51,17 @@ The plan is to create one simple way to do things.
 
 #### Notes
 1. Portal items are preferred over a complex menu system as it more clearly identifes the actions available to a user.
+
+# Code
+### lambda-tools.py
+
+The AWS Lambda code editor uses a large amount of RAM, especially if you are editting multiple Lambda functions.
+This tool allows the files to be editted locally and then uploaded quckly as one or more zip files.
+
+Actions in a specified region allow:
+- list — display a list of lambda functions specified in a region
+- upload — build a zip file from the contents of a folder then upload the zip file to replace the current lambda files
+- create — create a new lambda function using the contents of a folder; create a zip file; then upload it to the Lambda function
+- sync — synchronise multipe folders (one per lambda function) with a set of lambda functions
+
+Arguments for each action are described in the code.
